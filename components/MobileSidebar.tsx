@@ -1,10 +1,10 @@
 'use client';
-import { Bell, CircleHelp, CircleUser, Home, LineChart, Menu, Package, Package2, Search, Settings, ShoppingCart, Users } from 'lucide-react';
+import { Bell, CircleHelp, Menu, Search, Settings } from 'lucide-react';
 import Link from 'next/link';
 
 import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
+import { Card, CardContent } from '@/components/ui/card';
 import {
     DropdownMenu,
     DropdownMenuContent,
@@ -15,12 +15,12 @@ import {
 } from '@/components/ui/dropdown-menu';
 import { Input } from '@/components/ui/input';
 import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
-import Logo from './Logo';
-import { ThemeToggle } from './ui/ThemeToggle';
-import { menuLinks } from './Sidebar';
 import { usePathname } from 'next/navigation';
-import { Avatar, AvatarFallback, AvatarImage } from './ui/avatar';
 import { HiDotsVertical } from 'react-icons/hi';
+import Logo from './Logo';
+import { menuLinks } from './Sidebar';
+import { Avatar, AvatarFallback, AvatarImage } from './ui/avatar';
+import ThemeToggle from './ui/theme-toggle-button';
 
 export default function MobileSidebar() {
     const pathname = usePathname();
@@ -76,6 +76,7 @@ export default function MobileSidebar() {
                                     ))}
                                 </nav>
                             </div>
+
                             <div className='mt-auto flex flex-col gap-6 p-4'>
                                 <nav className='grid items-start  text-sm font-medium'>
                                     <Link
@@ -112,6 +113,9 @@ export default function MobileSidebar() {
                                         <div className='flex w-full items-center justify-between transition-all group-hover:translate-x-2'>Settings</div>
                                     </Link>
                                 </nav>
+                                <div className='mx-auto'>
+                            <ThemeToggle />
+                        </div>
                                 <Card className='bg-secondary'>
                                     <CardContent className='p-2  md:p-4 '>
                                         <div className='flex items-center gap-4'>
