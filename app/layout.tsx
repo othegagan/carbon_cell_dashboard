@@ -15,7 +15,7 @@ const poppins = Poppins({
 
 export const metadata: Metadata = {
     title: 'Carbon Cell | Gagan Kumar',
-    description: 'Ecommerce is a platform for buying and selling products online. It provides a seamless and secure shopping experience for users.',
+    description: 'Discover the latest Bitcoin prices and trends. Stay informed with real-time updates on Bitcoin value in multiple currencies, including USD, GBP, and EUR',
 };
 
 export default function RootLayout({
