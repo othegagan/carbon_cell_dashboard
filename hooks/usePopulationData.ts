@@ -9,8 +9,9 @@ const usePopulationData = () => {
         const fetchData = async () => {
             try {
                 setLoading(true);
-                setError(false)
-                const response = await fetch('https://datausa.io/api/data?drilldowns=Nation&measures=Population');
+                setError(false);
+                const url = 'https://datausa.io/api/data?drilldowns=Nation&measures=Population';
+                const response = await fetch(url);
                 if (!response.ok) {
                     throw new Error('Failed to fetch data');
                 }

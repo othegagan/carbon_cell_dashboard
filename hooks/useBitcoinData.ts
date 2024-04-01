@@ -10,7 +10,8 @@ const useBitcoinData = () => {
         const fetchData = async () => {
             try {
                 setLoading(true);
-                const response = await fetch('https://api.coindesk.com/v1/bpi/currentprice.json');
+                const url = 'https://api.coindesk.com/v1/bpi/currentprice.json';
+                const response = await fetch(url);
                 if (!response.ok) {
                     throw new Error('Failed to fetch data');
                 }
@@ -19,7 +20,7 @@ const useBitcoinData = () => {
                     currency,
                     description: info.description,
                     symbol: info.symbol,
-                    rate: parseFloat(info.rate.replace(',', '')), // Remove commas and parse as float
+                    rate: parseFloat(info.rate.replace(',', '')),
                 }));
                 setBitcoinData(formattedData);
                 setUpdatedTime(data.time.updatedISO);
