@@ -27,7 +27,7 @@ export default function BitcoinComponent() {
         </div>
 
 
-<div className='flex flex-col'>
+<div className='flex flex-row  md:flex-col'>
 
             <p className="text-xs text-muted-foreground mt-auto"> Updated On : </p>
             <p className="text-xs text-muted-foreground "> {format(new Date(String(updatedTime)),'PPP , h:MM a')}</p>

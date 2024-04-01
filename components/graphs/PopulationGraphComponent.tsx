@@ -61,8 +61,8 @@ export default function PopulationGraphComponent() {
                     data={nationsData}
                     margin={{
                         top: 20,
-                        right: 30,
-                        left: 20,
+                        right: 0,
+                        left: 0,
                         bottom: 10,
                     }}>
                     <XAxis dataKey='Year' tick={<CustomXAxisTick />} />
