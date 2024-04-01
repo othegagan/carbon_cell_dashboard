@@ -57,6 +57,7 @@ export default function MobileSidebar() {
                                     <Input
                                         type='search'
                                         placeholder='Search '
+                                        autoFocus={false}
                                         className='w-full appearance-none bg-secondary pl-8 shadow-none dark:text-white dark:placeholder:text-white/90'
                                     />
                                 </div>
@@ -122,20 +123,20 @@ export default function MobileSidebar() {
                                             <div className='relative w-fit'>
                                                 <div className='absolute right-0 top-0 z-10 size-3 rounded-full bg-primary'></div>
                                                 <Avatar className='size-8'>
-                                                    <AvatarImage src='https://github.com/shadcn.png' alt='@shadcn' />
-                                                    <AvatarFallback>CN</AvatarFallback>
+                                                    <AvatarImage src='https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Adams_The_Tetons_and_the_Snake_River.jpg/1200px-Adams_The_Tetons_and_the_Snake_River.jpg' alt='user_profile' />
+                                                    <AvatarFallback>GK</AvatarFallback>
                                                 </Avatar>
-                                                <span className='sr-only'>Toggle user menu</span>
+                                                <span className='sr-only'>User</span>
                                             </div>
                                             <div className='flex flex-col '>
-                                                <p className='truncate dark:text-white'>Brooklyn Simmons</p>
-                                                <p className='text-xs'>brooklyn@simmons.com</p>
+                                                <p className='truncate dark:text-white'>Gagan Kumar</p>
+                                                <p className='text-xs'>hellothegagan@gmail.com</p>
                                             </div>
                                             <DropdownMenu>
                                                 <DropdownMenuTrigger asChild>
                                                     <Button variant='secondary' size='icon' className='rounded-full '>
                                                         <HiDotsVertical />
-                                                        <span className='sr-only'>Toggle user menu</span>
+                                                        <span className='sr-only'>Toggle  menu</span>
                                                     </Button>
                                                 </DropdownMenuTrigger>
                                                 <DropdownMenuContent align='end'>

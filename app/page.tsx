@@ -10,7 +10,7 @@ export default function Dashboard() {
             <div className='flex flex-col items-start justify-start gap-4 md:flex-row md:justify-between '>
                 <div className='flex  flex-col '>
                     <h1 className='text-lg font-medium md:text-2xl '>
-                        Hello, <span className='brand'>Brooklyn Simmons</span> <span>👋</span>
+                        Hello, <span className='brand'>Gagan Kumar</span> <span>👋</span>
                     </h1>
                     <h4 className='font-normal md:text-lg'>
                         Welcome to <span className='text-primary'>Spot tranding..!</span>
