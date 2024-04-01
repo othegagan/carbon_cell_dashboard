@@ -59,7 +59,7 @@ export default function Sidebar() {
     const pathname = usePathname();
     return (
         <>
-            <div className='hidden rounded-r-lg bg-black/90 text-white dark:bg-muted/70 md:block'>
+            <div className='sticky inset-x-0 top-0 hidden max-h-screen rounded-r-lg bg-black/90 text-white dark:bg-muted/70 md:block '>
                 <div className='flex h-full max-h-screen flex-col gap-2'>
                     <div className='flex h-14 items-center  px-4 lg:h-[60px] lg:px-6'>
                         <Link href='/' className='mt-2'>
@@ -136,14 +136,17 @@ export default function Sidebar() {
                                     <div className='relative w-fit'>
                                         <div className='absolute right-0 top-0 z-10 size-3 rounded-full bg-primary'></div>
                                         <Avatar className='size-8'>
-                                                    <AvatarImage src='https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Adams_The_Tetons_and_the_Snake_River.jpg/1200px-Adams_The_Tetons_and_the_Snake_River.jpg' alt='user_profile' />
-                                                    <AvatarFallback>GK</AvatarFallback>
-                                                </Avatar>
-                                                <span className='sr-only'>User</span>
+                                            <AvatarImage
+                                                src='https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Adams_The_Tetons_and_the_Snake_River.jpg/1200px-Adams_The_Tetons_and_the_Snake_River.jpg'
+                                                alt='user_profile'
+                                            />
+                                            <AvatarFallback>GK</AvatarFallback>
+                                        </Avatar>
+                                        <span className='sr-only'>User</span>
                                     </div>
                                     <div className='flex flex-col '>
-                                    <p className='truncate dark:text-white'>Gagan Kumar</p>
-                                                <p className='text-xs'>hellothegagan@gmail.com</p>
+                                        <p className='truncate dark:text-white'>Gagan Kumar</p>
+                                        <p className='text-xs'>hellothegagan@gmail.com</p>
                                     </div>
                                     <DropdownMenu>
                                         <DropdownMenuTrigger asChild>

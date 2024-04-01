@@ -1,5 +1,6 @@
 import BitcoinComponent from '@/components/graphs/BitcoinComponent';
 import PopulationGraphComponent from '@/components/graphs/PopulationGraphComponent';
+import NewsAndBlog from '@/components/NewsAndBlog';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { FaBitcoin } from 'react-icons/fa';
@@ -47,8 +48,7 @@ export default function Dashboard() {
                 </Card>
             </div>
 
-
-
+            <NewsAndBlog />
         </>
     );
 }

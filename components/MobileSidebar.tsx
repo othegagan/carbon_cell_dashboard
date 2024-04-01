@@ -29,7 +29,7 @@ export default function MobileSidebar() {
             <div className='flex shrink-0  items-center justify-between gap-4 p-4   md:hidden  lg:px-6'>
                 <Link href='/'>
                     <div className='flex items-center gap-2  md:px-0'>
-                        <img src='./logo.png' className='h-10 object-contain  ' />
+                        <img src='./logo.png' className='h-10  object-contain  ' />
 
                         <div className='flex flex-col items-start'>
                             <h4 className=' brand m-0 text-center font-bold leading-none'>Carbon</h4>
@@ -44,10 +44,10 @@ export default function MobileSidebar() {
                             <span className='sr-only'>Toggle navigation menu</span>
                         </Button>
                     </SheetTrigger>
-                    <SheetContent side='left' className='flex flex-col   p-0'>
+                    <SheetContent side='left' className='flex max-w-sm  flex-col  p-0'>
                         <div className='flex h-full  flex-col gap-2'>
-                            <div className='flex h-14 items-center'>
-                                <Link href='/'>
+                            <div className='mt-2 flex h-14 items-center'>
+                                <Link href='/' tabIndex={1} autoFocus>
                                     <Logo />
                                 </Link>
                             </div>
@@ -58,6 +58,7 @@ export default function MobileSidebar() {
                                         type='search'
                                         placeholder='Search '
                                         autoFocus={false}
+                                        disabled
                                         className='w-full appearance-none bg-secondary pl-8 shadow-none dark:text-white dark:placeholder:text-white/90'
                                     />
                                 </div>
@@ -115,15 +116,18 @@ export default function MobileSidebar() {
                                     </Link>
                                 </nav>
                                 <div className='mx-auto'>
-                            <ThemeToggle />
-                        </div>
+                                    <ThemeToggle />
+                                </div>
                                 <Card className='bg-secondary'>
                                     <CardContent className='p-2  md:p-4 '>
-                                        <div className='flex items-center gap-4'>
+                                        <div className='flex  items-center gap-4'>
                                             <div className='relative w-fit'>
                                                 <div className='absolute right-0 top-0 z-10 size-3 rounded-full bg-primary'></div>
                                                 <Avatar className='size-8'>
-                                                    <AvatarImage src='https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Adams_The_Tetons_and_the_Snake_River.jpg/1200px-Adams_The_Tetons_and_the_Snake_River.jpg' alt='user_profile' />
+                                                    <AvatarImage
+                                                        src='https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Adams_The_Tetons_and_the_Snake_River.jpg/1200px-Adams_The_Tetons_and_the_Snake_River.jpg'
+                                                        alt='user_profile'
+                                                    />
                                                     <AvatarFallback>GK</AvatarFallback>
                                                 </Avatar>
                                                 <span className='sr-only'>User</span>
@@ -136,7 +140,7 @@ export default function MobileSidebar() {
                                                 <DropdownMenuTrigger asChild>
                                                     <Button variant='secondary' size='icon' className='rounded-full '>
                                                         <HiDotsVertical />
-                                                        <span className='sr-only'>Toggle  menu</span>
+                                                        <span className='sr-only'>Toggle menu</span>
                                                     </Button>
                                                 </DropdownMenuTrigger>
                                                 <DropdownMenuContent align='end'>
