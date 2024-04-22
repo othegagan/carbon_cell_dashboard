@@ -1,5 +1,6 @@
 # Carbon Cell dashboard
-![alt text](Browser.png)
+![image](https://github.com/othegagan/carbon_cell_dashboard/assets/77300329/6c853713-d6d4-4da1-9db7-d0bdb62fd617)
+
 <h5>
 Discover the latest Bitcoin prices and trends. Stay informed with real-time updates on Bitcoin value in multiple currencies, including USD, GBP, and EUR
 </h5>
